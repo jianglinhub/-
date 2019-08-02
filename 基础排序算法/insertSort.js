@@ -1,8 +1,8 @@
 const { 
   generateRandomArray, testSort, swap, generateNearlyOrderedArray,
-} = require('./utils');
+} = require('../utils');
 
-const selectionSort = require('./selectionSort');
+const selectionSort = require('../selectionSort');
 
 // function insertSort(arr, n) {
 //   for (let i = 1; i < n; i++) {
@@ -29,8 +29,8 @@ function main() {
   let arr = generateNearlyOrderedArray(n, 10)
   // let arr = generateRandomArray(n, 0, n);
   let arr2 = [...arr];
-  testSort('Insert Sort', insertSort, arr, n);
-  testSort('Selection Sort', selectionSort, arr2, n);
+  testSort('Insert Sort', insertSort, arr, n); // 3.512ms
+  testSort('Selection Sort', selectionSort, arr2, n); // 5512.806ms
 }
 
 main()

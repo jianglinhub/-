@@ -19,7 +19,7 @@ function main() {
   let arr = generateRandomArray(n, 0, n)
   // selectionSort(arr, n);
   // printArray(arr, n);
-  testSort('Selection Sort', selectionSort, arr, n);
+  testSort('Selection Sort', selectionSort, arr, n); // 12.654ms
 }
 
 // main()
